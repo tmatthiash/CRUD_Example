@@ -1,0 +1,17 @@
+
+.item-row-input {
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid;
+    outline: none;
+    margin: 10px;
+}
+
+.item-row-input-description {
+    width: 400px;
+}
+
+.item-row-button {
+    height: 30px;
+    margin: 10px;
+}

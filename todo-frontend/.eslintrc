@@ -1,0 +1,102 @@
+{
+    "plugins": [
+      "prettier",
+      "@typescript-eslint"
+    ],
+    "extends": [
+      "react-app",
+      "prettier",
+      "plugin:prettier/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "settings": {
+      "import/resolver": {
+        "typescript": {
+          "alwaysTryTypes": true
+        }
+      }
+    },
+    "rules": {
+      "react/react-in-jsx-scope": "off",
+      "prettier/prettier": ["error", {"singleQuote": true}],
+      "eqeqeq": [2, "smart"],
+      "consistent-return": "off",
+      "dot-notation": 1,
+      "curly": 2,
+      "func-names": 2,
+      "object-curly-spacing": [
+        "warn",
+        "always"
+      ],    
+      "@typescript-eslint/no-unnecessary-boolean-literal-compare": 1,
+      "@typescript-eslint/prefer-string-starts-ends-with": 1,
+      "@typescript-eslint/prefer-optional-chain": 1,
+      "@typescript-eslint/default-param-last": 1,
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        {
+          "vars": "all",
+          "args": "none"
+        }
+      ],
+      "@typescript-eslint/no-explicit-any": [
+        "error",
+        {
+          "ignoreRestArgs": true
+        }
+      ],
+      "jsx-a11y/label-has-associated-control": "off",
+      "no-undef-init": "off",
+      "max-len": [
+        "warn",
+        {
+          "code": 100,
+          "ignoreStrings": true,
+          "ignoreTemplateLiterals": true,
+          "ignoreComments": true
+        }
+      ],
+      "no-plusplus": [
+        "error",
+        {
+          "allowForLoopAfterthoughts": true
+        }
+      ],
+      "react/jsx-key": "error",
+      "react/require-default-props": "off",
+      "import/no-extraneous-dependencies": [
+        "error",
+        {
+          "devDependencies": [
+            "**/*.test.js",
+            "**/*.test.jsx",
+            "**/*.test.ts",
+            "**/*.test.tsx",
+            "src/tests/**/*"
+          ]
+        }
+      ],
+      "react/jsx-props-no-spreading": "off",
+      "import/prefer-default-export": "off",
+      "quotes": [1, "single"],
+      "react/jsx-boolean-value": "off",
+      "react/prop-types": "off",
+      "react/no-unescaped-entities": "off",
+      "react/jsx-one-expression-per-line": "off",
+      "react/jsx-wrap-multilines": "off",
+      "react/destructuring-assignment": "off",
+      "@typescript-eslint/comma-dangle": [
+        "error",
+        {
+          "arrays": "only-multiline",
+          "objects": "only-multiline",
+          "imports": "only-multiline",
+          "exports": "only-multiline",
+          "functions": "never"
+        }
+      ]
+    }
+  }
